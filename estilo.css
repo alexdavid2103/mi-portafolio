@@ -354,7 +354,7 @@ html{
 }
 @keyframes comunicacion {
     0%{width: 0%;}
-    100%{width: 72%;}
+    100%{width: 100%;}
 }
 /* SECCION CURRICULUM */
 .curriculum{
