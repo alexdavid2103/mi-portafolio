@@ -1,413 +1,526 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>portfolio</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-    <!--ENCABEZADO-->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">ALEX</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/a.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <title>Portafolio</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-circle">A</span>
+                <span class="nav__logo-name">Alex Gonzalez.</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav__title">Menu</span>
+
+                <h3 class="nav__name">Alex</h3>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre Mi</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projectos</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link nav__link-button">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/foto verde.jpeg" alt="">
-            </div>
-            <h1>Alex Gonzalez</h1>
-            <h2>Desarrollador Web</h2>
-            <div class="redes">
-                <a href="https://web.facebook.com/profile.php?id=100025111175796"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://twitter.com/AlexDav14066271?t=BwQKuneGRH1bEH2-lwNlYw&s=08"><i class="fa-brands fa-twitter"></i></a>
-                <a href="www.linkedin.com/in/alexdavid2103"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/alex_gonzalez2103/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/alexdavid2103"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
-    </section>
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mi</h2>
-            <p><span>Hola, soy Alex Gonzalez</span> Me considero una persona responsable, dinámica y creativa, 
-                con facilidad de adaptación y capacidad de trabajar en equipo, con iniciativa para resolver problemas 
-                eficientemente y lograr las metas y objetivos trazados por la empresa.
-                 Persona seria, responsable y con muchas ganas de trabajar y de aprender</p>
-            <div class="fila">
-                <!-- DATOS PERSONALES -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            21-03-2003
-                        </li>
-                        <li>
-                            <strong>Telefono</strong>
-                            304 673 2095
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            alexgonzalezpabuena@gmail.com
-                        </li>
-                        <li>
-                            <strong>Web</strong>
-                            www.alex.com
-                        </li>
-                        <li>
-                            <strong>Ciudad</strong>
-                            Barranquilla Atlantico
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>Desarrollador Web</span>
-                        </li>
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- theme button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+                <h1 class="home__name">
+                    Alex Gonzalez
+                </h1>
+
+                <div class="home__perfil">
+                    <div class="home__image">
+                        <img src="assets/img/perfil_confondo.png" alt="image" class="home__img">
+                        <div class="home__shadow"></div>
+    
+                        <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
+                        <img src="assets/img/random-lines.svg" alt="" class="home__line">
+    
+                        <div class="geometric-box"></div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.instagram.com/alex_gonzalez2103/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+    
+                        <a href="https://www.linkedin.com/in/alexdavid2103/" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+    
+                        <a href="https://github.com/alexdavid2103" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__info">
+                    <p class="home__description">
+                        <b>Desarrollador Frontend</b>, con conocimientos en desarrollo web 
+                         y diseño, ofrezco lo mejor de mi en 
+                        proyectos de calidad.
+                    </p>
+    
+                    <a href="#about" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+    
+                        <span class="home__scroll-text">Scroll Down</span>
+                    </a>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+                <h2 class="section__title-1">
+                    <span>Sobre Mi.</span>
+                </h2>
+
+                <div class="about__perfil">
+                    <div class="about__image">
+                        <img src="assets/img/sobremi.jpeg" alt="image" class="about__img">
+    
+                        <div class="about__shadow"></div>
+    
+                        <div class="geometric-box"></div>
+                        <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                        <div class="about__box"></div>
+                    </div>
+               </div>
+
+               <div class="about__info">
+                 <p class="about__description">
+                    Apasionado por la creación de <b>páginas web</b> con
+                    <b>interfaz de usuario UI / UX</b>, con facilidad de adaptación y capacidad de trabajar en equipo, con iniciativa para resolver problemas 
+                    eficientemente y lograr las metas y objetivos trazados por la empresa.
+                 </p>
+
+                 <ul class="about__list">
+                    <li class="about__item">
+                        <b>My Skills Are:</b> HTML, CSS, JavaScript, 
+                        Laravel, Git & GitHub, Bootstrap, Photoshop & 
+                        Figma.
+                    </li
                     </ul>
+
+                 <div class="about__buttons">
+                    <a href="#contact" class="button">
+                        <i class="ri-send-plane-line"></i>Contáctame
+                    </a>
+    
+                    <a href="https://www.linkedin.com/in/alexdavid2103/" target="_blank" class="button__ghost">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <h2 class="section__title-2">
+                <span>Servicios.</span>
+            </h2>
+
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <div class="services__border">
+
+                        <div class="services__content">
+                            <div class="services__icon">
+                                <div class="services__box"></div>
+                                <i class="ri-layout-4-line"></i>
+                            </div>
+                            
+                            <h2 class="services__title">Diseño Web</h2>
+                            <p class="services__description">
+                                Hermosos y elegantes diseños con 
+                                Interfaces intuitivas y eficientes 
+                                y agradable de usar para el usuario.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="services__card">
+                    <div class="services__border">
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+                            <i class="ri-code-box-line"></i>
+                        </div>
+    
+                        <h2 class="services__title">Desarrollador</h2>
+    
+                        <p class="services__description">
+                            Desarrollo web personalizado a la medida de su 
+                            especificaciones, diseñadas para proporcionar un 
+                            Experiencia de usuario impecable.
+                        </p>
+                    </div>
+                  </div>
+                </article>
+    
+                <article class="services__card">
+                    <div class="services__border">
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+                            <i class="ri-smartphone-line"></i>
+                        </div>
+    
+                        <h2 class="services__title"> Diseño Movil</h2>
+    
+                        <p class="services__description">
+                            Adaptamos tus proyectos 
+                            web en diseño para móviles para proporcionar un
+                             experiencia de usuario sin limites.
+                        </p>
+                    </div>
+                </div>
+                </article>
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title-1">
+                <span>Projectos.</span>
+            </h2>
+
+            <div class="projects__container container grid">
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
+    
+                        <a href="#" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+    
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Website</h3>
+                        <h2 class="projects__title">Restaurant Website</h2>
+    
+                        <p class="projects__description">
+                            Project that you carry out in the design 
+                            and structure of the layout, showing the 
+                            design at the client's request.
+                        </p>
+                    </div>
+    
+                    <div class="projects__buttons">
+                        <a href="https://github.com/" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i>View
+                        </a>
+    
+                        <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                            <i class="ri-dribbble-line"></i>View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-2.jpg" alt="image" class="projects__img">
+    
+                        <a href="#" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+    
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">App</h3>
+                        <h2 class="projects__title">Yoga App</h2>
+    
+                        <p class="projects__description">
+                            Project that you carry out in the design 
+                            and structure of the layout, showing the 
+                            design at the client's request.
+                        </p>
+                    </div>
+    
+                    <div class="projects__buttons">
+                        <a href="https://github.com/" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i>View
+                        </a>
+    
+                        <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                            <i class="ri-dribbble-line"></i>View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-3.jpg" alt="image" class="projects__img">
+    
+                        <a href="#" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+    
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">App</h3>
+                        <h2 class="projects__title">Fast Food App</h2>
+    
+                        <p class="projects__description">
+                            Project that you carry out in the design 
+                            and structure of the layout, showing the 
+                            design at the client's request.
+                        </p>
+                    </div>
+    
+                    <div class="projects__buttons">
+                        <a href="https://github.com/" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i>View
+                        </a>
+    
+                        <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                            <i class="ri-dribbble-line"></i>View
+                        </a>
+                    </div>
+                </article>
+
+                <!-- <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
+    
+                        <a href="#" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+    
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Website</h3>
+                        <h2 class="projects__title">Coffee Delivery Website</h2>
+    
+                        <p class="projects__description">
+                            Project that you carry out in the design 
+                            and structure of the layout, showing the 
+                            design at the client's request.
+                        </p>
+                    </div>
+    
+                    <div class="projects__buttons">
+                        <a href="https://github.com/" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i>View
+                        </a>
+    
+                        <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                            <i class="ri-dribbble-line"></i>View
+                        </a>
+                    </div>
+                </article>
+    
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-2.jpg" alt="image" class="projects__img">
+    
+                        <a href="#" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+    
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Website</h3>
+                        <h2 class="projects__title">Barbershop Website</h2>
+    
+                        <p class="projects__description">
+                            Project that you carry out in the design 
+                            and structure of the layout, showing the 
+                            design at the client's request.
+                        </p>
+                    </div>
+    
+                    <div class="projects__buttons">
+                        <a href="https://github.com/" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i>View
+                        </a>
+    
+                        <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                            <i class="ri-dribbble-line"></i>View
+                        </a>
+                    </div>
+                </article> -->
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__data">
+                    <h2 class="section__title-2">
+                        <span>Contáctame.</span>
+                    </h2>
+
+                    <p class="contact__description-1">
+                        Leeré todos los correos electrónicos. 
+                        Envíame el mensaje que quieras y me pondré en contacto contigo.
+                    </p>
+    
+                    <p class="contact__description-2">
+                        Necesito su <b>Nombre</b> y su <b>Correo Electronico</b>, no
+                        tardaré en responderle, muchas Gracias.
+                    </p>
+    
+                    <div class="geometric-box"></div>
                 </div>
 
-                <!-- INTERESES -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
+                <div class="contact__mail">
+                    <h2 class="contact__title">
+                        Envíame un mensaje
+                    </h2>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <div class="contact__box">
+                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Nombre Completo ">
+                                <label for="name" class="contact__label">Nombre Completo </label>
+                            </div>
+    
+                            <div class="contact__box">
+                                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Correo Electronico">
+                                <label for="email" class="contact__label">Correo Electronico</label>
+                            </div>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
+    
+                        <div class="contact__box">
+                            <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Asunto">
+                            <label for="subject" class="contact__label">Asunto</label>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
+    
+                        <div class="contact__box contact__area">
+                            <textarea name="user_message" id="message" class="contact__input" required placeholder="Mensaje"></textarea>
+                            <label for="message" class="contact__label">Mensaje</label>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTES</span>
+    
+                        <p class="contact__message" id="contact-message"> </p> 
+
+                        <button type="submit" class="contact__button button">
+                            <i class="ri-send-plane-line"></i>Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact__social">
+                    <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
+    
+                    <div class="contact__social-data">
+                        <div>
+                            <p class="contact__social-description-1">
+                                No envía correos electrónicos
+                            </p>
+    
+                            <p class="contact__social-description-2">
+                                Escríbeme en mis redes sociales
+                            </p>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LEER</span>
+
+                        <div class="contact__social-links">
+                            <a href="https://web.facebook.com/profile.php?id=100025111175796" target="_blank" class="contact__social-link">
+                                <i class="ri-facebook-circle-line"></i>
+                            </a>
+    
+                            <a href="https://www.instagram.com/alex_gonzalez2103/" target="_blank" class="contact__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+    
+                            <a href="https://www.linkedin.com/in/alexdavid2103/" target="_blank" class="contact__social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
-                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- <button>
-           <a href="https://github.com/alexdavid2103/mi-portafolio"> Descargar CV <i class="fa-solid fa-download"></i></a>
-            <span class="overlay"></span>
-        </button> -->
-    </section>
+         </section>
+      </main>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <div class="col">
-                    <h3>Techical Skills</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso javascript">
-                                <span>85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>94%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Photoshop</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>74%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Diseño Web</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>PHP</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- PROFESSIONAL SKILLS -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Sistemas</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicacion</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>86%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Comunicacion</span>
-                        <div class="barra-skill">
-                            <div class="progreso comunicacion">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#home" class="footer__link">Inicio</a>
+                </li>
 
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Programación de Software</h4>
-                        <span class="casa">Servicio Nacional de Aprendizaje "SENA"</span>
-                        <span class="fecha">2023 - 2026</span>
-                        <p>Persona capaz de participar en un grupo de investigación y desarrollo de sistemas informáticos, asumiendo la función de diseñador y desarrollador del componente computacional, de común acuerdo con los demás miembros del grupo.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Sistemas</h4>
-                        <span class="casa">Servicio Nacional de Aprendizaje "SENA"</span>
-                        <span class="fecha">2020 - 2022</span>
-                        <p>Conocimientos sobre mantenimiento, reparación y supervisión de sistemas operativos, aplicaciones, programas, servidores, entre otros. Algunos de ellos también poseen conocimiento en la creación de scripts, desarrollo web, entre otros,</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Ventas de Productos y Servicios </h4>
-                        <span class="casa">Servicio Nacional de Aprendizaje "SENA"</span>
-                        <span class="fecha">2018 - 2019</span>
-                        <p>Aprendiz con habilidades para proyectar mercados de acuerdo con el tipo de producto o servicio, identificar su comportamiento, negociar productos y servicios y su exhibiciò,n teniendo en cuenta sus caracteristicas propias</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
+                <li>
+                    <a href="#about" class="footer__link">Sobre Mi </a>
+                </li>
 
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Tecnico en Sistemas</h4>
-                        <span class="casa">Grupo de Investigación y Desarrollo tecnologico e innovación “SENNOVA”</span>
-                        <span class="fecha">2022 </span>
-                        <p>Mantenimiento y supervisión de equipos informáticos
-                            Desarrollo Web
-                            Diseño Web</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Eventos</h4>
-                        <span class="casa">Red Colombiana de Semilleros de Investigación
-                            (RedCOLSI)</span>
-                        <span class="fecha">2022</span>
-                        <p>Participación como ponente de un proyecto en el XIX Encuentro Departamental de Semilleros
-                            de Investigación de la Red Colombiana de
-                            semilleros de investigación RedColsi realizado en la ciudad de Barranquilla</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Eventos</h4>
-                        <span class="casa">Red Colombiana de Semilleros de Investigación
-                            (RedCOLSI)</span>
-                        <span class="fecha">2022</span>
-                        <p>Participación en el XXV encuentro nacional y XIX encuentro
-                            internacional de semilleros de investigación
-                            fundación "RedColsi" realizado en la ciudad de Medellin.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <li>
+                    <a href="#projects" class="footer__link">Projectos</a>
+                </li>
+            </ul>
 
-     <!-- SECCION PORTFOLIO -->
-     <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/port.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/port2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño </h3>
-                        <p>inicio seccion</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño</h3>
-                        <p>escritorio</p>
-                    </div>
-                </div>
-                <!-- <div class="proyecto">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
+            <span class="footer__copy">
+                &#169; Todos los derechos reservados
+                <a href="#">alexnet.</a>
+            </span>
+         </div>
+      </footer>
 
-      <!-- SECCION CONTACTO -->
-      <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacionueva.jpg" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Barranquilla Atlantico
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamame: 304 673 2095
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                adavid2103@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+      </a>
 
-    <!-- footer -->
-    <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://web.facebook.com/profile.php?id=100025111175796"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://twitter.com/AlexDav14066271?t=BwQKuneGRH1bEH2-lwNlYw&s=08"><i class="fa-brands fa-twitter"></i></a>
-                <a href="www.linkedin.com/in/alexdavid2103"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/alex_gonzalez2103/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/alexdavid2103"><i class="fa-brands fa-github"></i></a>
-        </div>
-    </footer>
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+      
+      <!--=============== EMAIL JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <script src="script.js"></script>
-
-</body>
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
