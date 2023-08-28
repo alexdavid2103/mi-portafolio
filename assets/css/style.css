@@ -706,7 +706,7 @@ body.dark-theme {
 }
 
 .services__card:hover .services__border {
-    transform: translate(.75rem, .75rem);
+    transform: translate(.65rem, .65rem);
     border: 4px solid var(--first-color);
 }
 
